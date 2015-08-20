@@ -1,0 +1,43 @@
+author = "Fuiba - Editada por Collumbus";
+
+// Overview:
+overviewText = "PMC Aegis annuls the Altian olive production.";
+overviewPicture = "overview_05.paa"; // Mission screenshot
+
+// Loading:
+onLoadName = "Ignis Graecus"; // Mission name
+onLoadMission = "Eliminate the plantation owner and destroy the olive tree saplings.";
+loadScreen = "aegislogo.paa"; // Loading screen pip
+
+doneKeys[] = {"co10_pmcvcro05"};
+
+minScore=0;
+avgScore=1000;
+maxScore=14000;
+
+class CfgWorlds
+{
+		// Loading texts displayed on the bottom of the loading screen (picked randomly)
+		loadingTexts[]=
+		{
+			"Aegis was founded in 1997.",
+			"Stratis is of volcanic origin, with many rocks and crevices and Aegis."
+		};
+};
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 12;
+};
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "PMC Aegis has eliminated Mr. Simonides Dionysodoros and crippled the Altian economy by denying the two most profitable exports: ouzo and olives. The Altian government is in crisis but Corona has already a new target in sight: the Altian go-kart GP will be taking place this January.";
+	};
+};
