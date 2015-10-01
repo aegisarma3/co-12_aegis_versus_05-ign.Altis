@@ -2,12 +2,14 @@ author = "Fuiba - Editada por Collumbus";
 
 // Overview:
 overviewText = "PMC Aegis annuls the Altian olive production.";
-overviewPicture = "overview_05.paa"; // Mission screenshot
+overviewPicture = "images\images\overview_05.paa"; // Mission screenshot
 
 // Loading:
 onLoadName = "Ignis Graecus"; // Mission name
 onLoadMission = "Eliminate the plantation owner and destroy the olive tree saplings.";
-loadScreen = "aegislogo.paa"; // Loading screen pip
+loadScreen = "images\aegislogo.paa"; // Loading screen pip
+enableDebugConsole = 1;
+respawn            = 4;
 
 doneKeys[] = {"co10_pmcvcro05"};
 
@@ -15,13 +17,8 @@ minScore=0;
 avgScore=1000;
 maxScore=14000;
 
-//ACE Config
-#include "aegis_ace_settings.hpp"
-
-//Loadouts
-class CfgFunctions {
-  #include "modules\a3g-loadout\CfgFunctions.hpp"
-};
+//AEGIS Config
+#include "aegis\functions.hpp"
 
 class CfgLoadouts {
 	//Team Lider
